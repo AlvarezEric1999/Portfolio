@@ -6,6 +6,7 @@
 
 html{
     font-size: 62.5%;
+    font-family: 'Roboto';
 }
 
 :root{
@@ -222,4 +223,39 @@ header{
     font-family: 'Roboto';
     line-height: 25px;
     
+}
+
+.skills-container{
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    
+}
+
+.skills-items-container{
+    width: 100%;
+    min-width: 300px;
+    min-height: 400px;
+    border-radius: 25px;
+    border: 1px solid black;
+
+}
+
+.skills-items-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+}
+
+
+.skill-items{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+}
+
+.skill-items div{
+ display: block;
 }
