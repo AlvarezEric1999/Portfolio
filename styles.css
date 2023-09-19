@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --primary-color:#ffff;
+    --secondary-color:#000000;
+    --third-color:#555555
+}
+
+header{
+    width: 100%;
+    height: 130px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+
+.navbar-name{
+    width: 50%;
+    margin-right: 50px;
+    padding: 10px;
+    font-size: 2.5rem;
+    font-family: 'Roboto';
+}
+
+.nav-bar{
+    width: 40%;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-bar{
+    width: 200px;
+    padding: 8px ;
+    position: absolute;
+    z-index: 40;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    right: 10px;
+    top: 100px;
+    background-color: var(--primary-color);
+    border: 1px solid #000000;
+}
+
+.nav-bar li {
+    list-style: none;
+    padding: 8px 10px;
+    
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size:2.5rem ;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+}
+
+.nav-bar-button{
+    display: flex;
+    align-items: center;
+    padding: 1px;
+}
+
+.nav-bar-button li {
+    list-style: none;
+    font-size: 4.5rem;
+}
+
+.presentation-container{
+    width: 340px;
+    margin: 0 auto;
+    padding: 8px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation-container img {
+    width: 150px;
+    height: 150px;
+}
+
+.presentation-description{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.presentation-description p {
+    color: var(--third-color);
+    font-size: 2rem;
+}
+
+.presentation-description h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 8px;
+}
+
+.presentation-description h2 {
+    font-size: 3rem;
+    color: var(--third-color);
+    padding: 8px;
+}
+
+.presentation-buttons{
+    width: 100%;
+    padding: 8px;
+}
+.presentation-buttons button {
+    
+    border-radius: 25px;
+    padding:15px 25px ;
+    outline: none;
+    background: transparent;
+
+}
+
+.presentation-social{
+    width: 100%;
+    font-size: 3.5rem;
+}
+
+.presentation-buttons:nth-child(1){
+   background: var(--secondary-color);
+}
+
+.about-main-container{
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 140px;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+
+.about-main-container .about-container-Subtitle{
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    padding: 5px;
+    color: var(--third-color);
+}
+
+
+.about-main-container .about-container-title{
+    font-size: 3rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.about-container-img{
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+
+.about-container-img img{
+    width: 150px;
+    height: 150px;
+}
+
+.about-education-container{
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    padding:  20px 0 20px 0 ;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+}
+
+
+.about-education-container .education-item {
+    width: 200px;
+    height: 220px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    padding: 15px 10px;
+}
+
+
+.about-education-container .education-item p{
+    color: var(--third-color);
+}
+
+
+.about-presentation-container{
+    width: 100%;
+    padding: 20px 5px 20px 5px;
+}
+
+.about-education-container .experience img{
+    width: 20px;
+    height: 20px;
+}
+.about-education-container .education img{
+    width: 20px;
+    height: 20px;
+}
+
+.about-presentation-container p {
+    font-size: 2rem;
+    font-family: 'Roboto';
+    line-height: 25px;
+    
+}
