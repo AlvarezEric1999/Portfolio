@@ -85,12 +85,14 @@ header{
 }
 
 .presentation-container{
-    width: 340px;
-    margin: 0 auto;
-    padding: 8px 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 4rem;
+    height: 70vh;
+    text-align: center;    
+}
+
+.presentation-container .presentation-img {
+    width: auto;
+    padding: 20px 0 0 0;
 }
 
 .presentation-container img {
@@ -99,7 +101,7 @@ header{
 }
 
 .presentation-description{
-    width: 100%;
+    
     margin-top: 30px;
     text-align: center;
     font-family: 'Roboto';
@@ -121,22 +123,42 @@ header{
     color: var(--third-color);
     padding: 8px;
 }
-
 .presentation-buttons{
-    width: 100%;
-    padding: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
-.presentation-buttons button {
-    
-    border-radius: 25px;
-    padding:15px 25px ;
-    outline: none;
-    background: transparent;
 
+.presentation-buttons .btn-1 {
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    padding: 15px;
+    background: var(--primary-color);
+}
+
+.presentation-buttons .btn-2 {
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    padding: 15px 32px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+    
+
+.presentation-buttons .btn-1:hover {
+    outline: none;
+    border: 1px solid var(--primary-color) ;
+    border-radius: 25px;
+    padding: 15px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all .5s;
 }
 
 .presentation-social{
-    width: 100%;
+    padding: 8px ;
     font-size: 3.5rem;
 }
 
@@ -145,10 +167,7 @@ header{
 }
 
 .about-main-container{
-    width: 340px;
-    margin: 0 auto;
-    margin-top: 140px;
-    padding-top: 10px;
+    margin: 0 4rem;
     text-align: center;
 
 }
@@ -169,10 +188,7 @@ header{
     text-transform: capitalize;
 }
 
-.about-container-img{
-    width: 100%;
-    padding: 20px 0 20px 0;
-}
+
 
 
 .about-container-img img{
@@ -181,8 +197,9 @@ header{
 }
 
 .about-education-container{
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 18px;
     padding:  20px 0 20px 0 ;
     font-family: 'Roboto';
@@ -191,7 +208,11 @@ header{
 
 
 .about-education-container .education-item {
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
     height: 220px;
     border: 1px solid var(--secondary-color);
     border-radius: 25px;
@@ -204,10 +225,6 @@ header{
 }
 
 
-.about-presentation-container{
-    width: 100%;
-    padding: 20px 5px 20px 5px;
-}
 
 .about-education-container .experience img{
     width: 20px;
@@ -218,44 +235,24 @@ header{
     height: 20px;
 }
 
+.about-presentation-container{
+    
+    padding: 20px 5px 20px 5px;
+}
 .about-presentation-container p {
     font-size: 2rem;
     font-family: 'Roboto';
-    line-height: 25px;
-    
+    text-align: justify;
+  
 }
+
+
 
 .skills-container{
-    width: 320px;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 10px 0 10px 0;
-    text-align: center;
+    
+    margin: 0 4rem;
+   
+   height: 70vh;
     
 }
 
-.skills-items-container{
-    width: 100%;
-    min-width: 300px;
-    min-height: 400px;
-    border-radius: 25px;
-    border: 1px solid black;
-
-}
-
-.skills-items-container{
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0 20px 0;
-}
-
-
-.skill-items{
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0 20px 0;
-}
-
-.skill-items div{
- display: block;
-}
