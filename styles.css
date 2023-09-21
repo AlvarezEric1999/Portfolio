@@ -249,10 +249,56 @@ header{
 
 
 .skills-container{
-    
-    margin: 0 4rem;
-   
-   height: 70vh;
-    
+   margin: 0 4rem;
+
 }
 
+
+.skills-container > p {
+    text-align: center;
+    padding: 10px;
+}
+
+.skills-items-container{
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    margin-bottom: 20PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.skills-items-container p{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--third-color);
+}
+
+
+.skill-items{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px
+}
+.skill-items .skill-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    padding: 8px;
+}
+
+.skill-item span img{
+    width: 20px;
+    height: 20px;
+}
+
+.skill-item p {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
