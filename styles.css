@@ -26,6 +26,8 @@ header{
 }
 
 
+
+
 .navbar-name{
     width: 50%;
     margin-right: 50px;
@@ -212,11 +214,10 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 230px;
-    height: 220px;
+    
     border: 1px solid var(--secondary-color);
     border-radius: 25px;
-    padding: 15px 10px;
+    padding: 3rem;
 }
 
 
@@ -227,12 +228,17 @@ header{
 
 
 .about-education-container .experience img{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 .about-education-container .education img{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.about-education-container .education-item > p{
+    font-size: 2rem;
 }
 
 .about-presentation-container{
@@ -253,6 +259,17 @@ header{
 
 }
 
+.skills-subtitle{
+    color: var(--third-color);
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+.skills-title{
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
 
 .skills-container > p {
     text-align: center;
@@ -312,15 +329,69 @@ header{
 }
 
 
+.proyects-container .proyect-container-subtitle{
+  color: var(--third-color);
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+.proyects-container .proyect-container-title{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
 .proyects-items{
     border: 1px solid black;
     border-radius: 25px;
     margin-top: 30px;
     padding: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.proyect-item .proyect-title{
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.proyect-item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.proyects-links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px;
+}
+
+.proyect-btn{
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    padding: 15px 32px;
+    background:var(--primary-color) ;
+    color: var(--secondary-color) ;
+}
+
+.proyect-btn  a {
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 
-.proyect-item img {
-    width: 150px;
-    height: 150px;
+.proyect-btn:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    transition: ease-in 0.5s;
+}
+
+footer{
+    margin: 0 3rem;
+    padding: 15px 8px;
+    text-align: center;
 }
