@@ -7,6 +7,7 @@
 html{
     font-size: 62.5%;
     font-family: 'Roboto';
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -58,8 +59,17 @@ header{
     right: 10px;
     top: 100px;
     background-color: var(--primary-color);
-    border: 1px solid #000000;
+   
 }
+
+
+
+.show-menu{
+    display: block;
+    transition: ease-in 5s ;
+}
+
+
 
 .nav-bar li {
     list-style: none;
