@@ -22,6 +22,7 @@ header{
     padding: 30px 40px;
     display: flex;
     justify-content: center;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.2) ;
     
    
 }
@@ -48,7 +49,7 @@ header{
 
 
 .nav-bar{
-    width: 200px;
+    
     padding: 8px ;
     position: absolute;
     z-index: 40;
@@ -56,8 +57,8 @@ header{
     display: none;
     flex-direction: column;
     justify-content: center;
-    right: 10px;
-    top: 100px;
+    right: 0px;
+    top: 130px;
     background-color: var(--primary-color);
    
 }
@@ -66,7 +67,7 @@ header{
 
 .show-menu{
     display: block;
-    transition: ease-in 5s ;
+    
 }
 
 
@@ -76,6 +77,34 @@ header{
     padding: 8px 10px;
     
 }
+
+
+.nav-bar .navar-item a:hover{
+    color: var(--third-color);
+}
+
+.nav-bar .navar-item a {
+ position: relative;
+}
+
+.nav-bar .navar-item a::before{
+    content: "";
+    position: absolute;
+    bottom:  -5px;
+    width: 0%;
+    height: 2px;
+    border-radius: 5px;
+    background: var(--third-color);
+    transition: all 0.4s ease;
+}
+
+.nav-bar .navar-item a:hover::before{
+    width: 100%;
+   
+}
+
+
+
 
 .nav-bar li a {
     text-decoration: none;
@@ -101,7 +130,7 @@ header{
 
 .presentation-container{
     margin: 0 4rem;
-    height: 70vh;
+    height: 78vh;
     text-align: center;    
 }
 
@@ -227,6 +256,7 @@ header{
     border: 1px solid var(--secondary-color);
     border-radius: 25px;
     padding: 3rem;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.2) ;
 }
 
 
@@ -287,6 +317,7 @@ header{
 
 .skills-items-container{
     border: 1px solid var(--secondary-color);
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.2) ;
     border-radius: 20px;
     margin-bottom: 20PX;
     display: flex;
@@ -350,6 +381,7 @@ header{
 
 .proyects-items{
     border: 1px solid black;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.2) ;
     border-radius: 25px;
     margin-top: 30px;
     padding: 44px;
@@ -461,5 +493,10 @@ footer{
 
    .about-main-container .about-container{
         display: flex;
+    }
+
+    .presentation-img img{
+        width: 200px;
+        height: 200px;
     }
 }
